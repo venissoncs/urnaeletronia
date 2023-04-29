@@ -7,6 +7,8 @@
  *
  * @author Kaylane
  */
-public class Volei {
-    
+public class Volei extends Esportes {
+    public Volei() {
+        super("Vôlei");
+    }
 }

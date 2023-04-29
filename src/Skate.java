@@ -7,6 +7,8 @@
  *
  * @author Kaylane
  */
-public class Skate {
-    
+public class Skate extends Esportes {
+    public Skate() {
+        super("Skate");
+    }
 }

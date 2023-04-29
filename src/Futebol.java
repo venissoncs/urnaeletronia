@@ -7,6 +7,8 @@
  *
  * @author Kaylane
  */
-public class Futebol {
-    
+public class Futebol extends Esportes {
+    public Futebol() {
+        super("Futebol");
+    }
 }

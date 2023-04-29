@@ -7,6 +7,8 @@
  *
  * @author Kaylane
  */
-public class Capoeira {
-    
+public class Capoeira extends Esportes {
+    public Capoeira() {
+        super("Capoeira");
+    }
 }

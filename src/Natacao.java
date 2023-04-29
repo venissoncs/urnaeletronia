@@ -7,6 +7,8 @@
  *
  * @author Kaylane
  */
-public class Natacao {
-    
+public class Natacao extends Esportes {
+    public Natacao() {
+        super("Natação");
+    }
 }

@@ -1,5 +1,6 @@
 package Objetos;
 /**
+ * Classe abstrata Esportes
  *
  * @author Kaylane
  */

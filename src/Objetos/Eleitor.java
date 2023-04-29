@@ -1,15 +1,12 @@
 package Objetos;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import interfaces.ValidarEleitor;
 
 /**
+ * A classe "Eleitor" implementa a interface "ValidarEleitor"
  *
  * @author Kaylane
  */
-public class Eleitor {
+public class Eleitor implements ValidarEleitor {
     
     private String nome;
     private int tituloEleitor;
@@ -25,5 +22,17 @@ public class Eleitor {
 
     public int getTituloEleitor() {
         return tituloEleitor;
+    }
+
+    public boolean validarEleitor(String nome, String tituloEleitoral) {
+        if (nome.isEmpty() || tituloEleitoral.length() != 10) {
+            return false;
+        }
+        try {
+            Integer.parseInt(tituloEleitoral);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
     }
 }

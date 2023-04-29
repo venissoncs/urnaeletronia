@@ -17,8 +17,10 @@ public class LerDadosEleitores {
     public static void main(String[] args) {
         String nomeArquivo = "eleitores.txt";
         ArrayList<Eleitor> eleitores = new ArrayList<>();
+        BufferedReader br = null;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo))) {
+        try {
+            br = new BufferedReader(new FileReader(nomeArquivo));
             String linha = br.readLine();
             while (linha != null) {
                 String[] dados = linha.split(";");
@@ -31,5 +33,15 @@ public class LerDadosEleitores {
         } catch (IOException e) {
             System.out.println("Erro ao ler arquivo " + nomeArquivo);
             e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao fechar o arquivo " + nomeArquivo);
+                    e.printStackTrace();
+                }
+            }
         }
     }
+}

@@ -25,7 +25,7 @@ public class Eleitor implements ValidarEleitor {
     }
 
     public boolean validarEleitor(String nome, String tituloEleitoral) {
-        if (nome.isEmpty() || tituloEleitoral.length() != 10) {
+        if (nome.isEmpty() || tituloEleitoral.length() != 11) {
             return false;
         }
         try {

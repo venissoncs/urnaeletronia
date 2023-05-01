@@ -1,40 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Objetos;
-
+import interfaces.ValidarEleitor;
 import interfaces.ValidarMesario;
-
 /**
+ * A classe "Mesario" implementa a interface "ValidarEleitor" e a interface "ValidarMesario"
  *
- * @author Vênisson Cardoso
+ * @author Kaylane
  */
-public class Mesario implements ValidarMesario {
-    private String nome;
-    private int matricula;
-    private int senha;
+public class Mesario extends Eleitor implements ValidarEleitor, ValidarMesario {
 
-    public Mesario(String nome, int matricula, int senha_digitada) {
-        this.nome = nome;
+    private String matricula;
+    private String senha;
+
+    public Mesario(String nome, int tituloEleitor, String matricula, String senha) {
+        super(nome, tituloEleitor);
         this.matricula = matricula;
-        this.senha = senha_digitada;
+        this.senha = senha;
     }
 
-    public String getNome() {
-        return nome;
+    @Override
+    public boolean validarEleitor(String nome, String tituloEleitoral) {
+        return nome.equals(getNome()) && tituloEleitoral.equals(String.valueOf(getTituloEleitor())) ;
     }
 
-    public int getMatricula() {
-        return matricula;
-    }
-
-    public int getSenhaDigitada() {
-        return senha_digitada;
-    }
-
-    public boolean validarMesario(String nome, String matricula) {
-        if (nome.isEmpty() || matricula.length() != 4 || senha_digitada != senha) {
+    @Override
+    public boolean validarMesario(String nome, String matricula, String senha) {
+        if (nome.isEmpty() || !matricula.equals(this.matricula) || !senha.equals(this.senha)) {
             return false;
         }
         try {

@@ -1,12 +1,12 @@
 package Objetos;
-import interfaces.ValidarEleitor;
+
 
 /**
- * A classe "Eleitor" implementa a interface "ValidarEleitor"
+ * 
  *
  * @author Kaylane
  */
-public class Eleitor implements ValidarEleitor {
+public class Eleitor {
     
     private String nome;
     private int tituloEleitor;
@@ -22,17 +22,5 @@ public class Eleitor implements ValidarEleitor {
 
     public int getTituloEleitor() {
         return tituloEleitor;
-    }
-
-    public boolean validarEleitor(String nome, String tituloEleitoral) {
-        if (nome.isEmpty() || tituloEleitoral.length() != 11) {
-            return false;
-        }
-        try {
-            Integer.parseInt(tituloEleitoral);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-        return true;
     }
 }

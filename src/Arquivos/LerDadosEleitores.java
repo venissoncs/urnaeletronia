@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class LerDadosEleitores {
-    public static void main(String[] args) {
+    public static ArrayList<Eleitor> lerEleitores(String nameArquivo) {
         String nomeArquivo = "eleitores.txt";
         ArrayList<Eleitor> eleitores = new ArrayList<>();
         BufferedReader br = null;
@@ -46,5 +46,6 @@ public class LerDadosEleitores {
                 }
             }
         }
+        return eleitores;
     }
 }

@@ -3,18 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package urnaeletronica;
-
+import java.util.ArrayList;
+import Objetos.Eleitor;
+import Arquivos.*;
 /**
  *
- * @author venis
+ * @author Vênisson Cardoso
  */
 public class Urnaeletronica {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList<Eleitor> eleitores = LerDadosEleitores.lerEleitores("eleitores.txt");
+
+        for (Eleitor eleitor : eleitores) {
+            System.out.println("Nome: " + eleitor.getNome() + ", Tìtulo: " + eleitor.getTituloEleitor());
+        }
+
     }
-    
+
 }

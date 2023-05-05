@@ -1,5 +1,6 @@
 
 package Objetos;
+import Arquivos.LerDadosMesarios;
 import interfaces.ValidarEleitor;
 import interfaces.ValidarMesario;
 /**
@@ -16,6 +17,10 @@ public class Mesario extends Eleitor implements ValidarEleitor, ValidarMesario {
         super(nome, tituloEleitor);
         this.matricula = matricula;
         this.senha = senha;
+    }
+
+    public Mesario(LerDadosMesarios lerDadosMesarios) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override

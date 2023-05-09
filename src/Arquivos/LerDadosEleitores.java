@@ -8,7 +8,7 @@ package Arquivos;
 /**
  *
  * @author Kaylane
- */
+
 
 import Objetos.Eleitor;
 import java.io.BufferedReader;
@@ -18,34 +18,71 @@ import java.util.ArrayList;
 
 public class LerDadosEleitores {
     public static ArrayList<Eleitor> lerEleitores(String nameArquivo) {
-        String nomeArquivo = "eleitores.txt";
         ArrayList<Eleitor> eleitores = new ArrayList<>();
         BufferedReader br = null;
 
         try {
-            br = new BufferedReader(new FileReader(nomeArquivo));
+            br = new BufferedReader(new FileReader(nameArquivo));
             String linha = br.readLine();
             while (linha != null) {
                 String[] dados = linha.split(";");
                 String nome = dados[0];
-                int titulo = Integer.parseInt(dados[1]);
+                String titulo = Integer.parseInt(dados[1]);
                 Eleitor eleitor = new Eleitor(nome, titulo);
                 eleitores.add(eleitor);
                 linha = br.readLine();
             }
         } catch (IOException e) {
-            System.out.println("Erro ao ler arquivo " + nomeArquivo);
+            System.out.println("Erro ao ler arquivo " + nameArquivo);
             e.printStackTrace();
         } finally {
             if (br != null) {
                 try {
                     br.close();
                 } catch (IOException e) {
-                    System.out.println("Erro ao fechar o arquivo " + nomeArquivo);
+                    System.out.println("Erro ao fechar o arquivo " + nameArquivo);
                     e.printStackTrace();
                 }
             }
         }
+        return eleitores;
+    }
+}
+ */
+import Objetos.Eleitor;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class LerDadosEleitores {
+    public static ArrayList<Eleitor> lerEleitores(String nameArquivo) {
+        ArrayList<Eleitor> eleitores = new ArrayList<>();
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(nameArquivo));
+            String linha = br.readLine();
+            while (linha != null) {
+                String[] dados = linha.split(";");
+                String nome = dados[0];
+                String titulo = dados[1];
+                Eleitor eleitor = new Eleitor(nome, titulo);
+                eleitores.add(eleitor);
+                linha = br.readLine();
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao fechar o arquivo: " + nameArquivo);
+                    e.printStackTrace();
+                }
+            }   
+        }   
         return eleitores;
     }
 }

@@ -3,21 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package urnaeletronica;
+
 import java.util.ArrayList;
-import Objetos.Eleitor;
-import Arquivos.LerDadosEleitores;
+import arquivos.LerDadosEleitores;
+import objetos.Eleitor;
+
+
 /**
  *
- * @author Vênisson Cardoso
+ * @author Kaylane
+ * @coauthor Vênisson Cardoso
  */
-public class Urnaeletronica {
+public class UrnaEletronica {
     public static void main(String[] args) {
         ArrayList<Eleitor> eleitores = LerDadosEleitores.lerEleitores("C:\\eleitores.txt");
-
-        for (Eleitor eleitor : eleitores){
-            System.out.println("Nome: " + eleitor.getNome() + ", Título: " + eleitor.getTituloEleitor());
+        for (Eleitor eleitor : eleitores) {
+            System.out.println("Nome: "+ eleitor.getNome() +", Titulo: " +eleitor.getTituloEleitor());
         }
-
+        
+        
     }
-
+    
 }

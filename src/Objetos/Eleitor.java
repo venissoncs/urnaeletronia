@@ -5,7 +5,7 @@ package Objetos;
  * 
  *
  * @author Kaylane
- */
+ 
 public class Eleitor {
     
     private String nome;
@@ -25,6 +25,25 @@ public class Eleitor {
     }
 
     public int getTituloEleitor() {
+        return tituloEleitor;
+    }
+}*/
+
+public class Eleitor {
+    private String nome;
+    private String tituloEleitor;
+
+    public Eleitor(String nome, String tituloEleitor) {
+        this.nome = nome;
+        this.tituloEleitor = tituloEleitor;
+    }
+    public Eleitor() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    public String getNome() {
+        return nome;
+    }
+    public String getTituloEleitor() {
         return tituloEleitor;
     }
 }

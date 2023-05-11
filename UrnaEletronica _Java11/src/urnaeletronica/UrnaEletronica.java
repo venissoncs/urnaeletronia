@@ -5,7 +5,9 @@
 package urnaeletronica;
 
 import java.util.ArrayList;
+import arquivos.LerDadosMesarios;
 import arquivos.LerDadosEleitores;
+import objetos.Mesario;
 import objetos.Eleitor;
 
 
@@ -16,12 +18,9 @@ import objetos.Eleitor;
  */
 public class UrnaEletronica {
     public static void main(String[] args) {
-        ArrayList<Eleitor> eleitores = LerDadosEleitores.lerEleitores("C:\\eleitores.txt");
-        for (Eleitor eleitor : eleitores) {
-            System.out.println("Nome: "+ eleitor.getNome() +", Titulo: " +eleitor.getTituloEleitor());
+        ArrayList<Mesario> mesarios = LerDadosMesarios.lerMesarios("C:\\mesario.txt");
+        for (Mesario mesario : mesarios) {
+            System.out.println("Nome: "+ mesario.getNome()+", Titulo: "+mesario.getTituloEleitor()+", Matricula: "+mesario.getMatricula()+", Senha: "+mesario.getSenha());
         }
-        
-        
     }
-    
 }

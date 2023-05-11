@@ -15,7 +15,7 @@ public class Eleitor {
     
     public Eleitor(String nome, String tituloEleitor) {
         this.nome = nome;
-        this.tituloEleitor = nome;
+        this.tituloEleitor = tituloEleitor;
     }
     public Eleitor() {
         throw new UnsupportedOperationException("Not support yet.");

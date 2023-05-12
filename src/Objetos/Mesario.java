@@ -1,43 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package objetos;
 
-package Objetos;
-import Arquivos.LerDadosMesarios;
-import interfaces.ValidarEleitor;
-import interfaces.ValidarMesario;
 /**
- * A classe "Mesario" implementa a interface "ValidarEleitor" e a interface "ValidarMesario"
  *
  * @author Kaylane
+ * @coauthor Vênisson Cardoso
  */
-public class Mesario extends Eleitor implements ValidarEleitor, ValidarMesario {
-
+public class Mesario extends Eleitor {
     private String matricula;
     private String senha;
-
-    public Mesario(String nome, int tituloEleitor, String matricula, String senha) {
+    
+    public Mesario(String nome, String tituloEleitor, String matricula, String senha) {
         super(nome, tituloEleitor);
         this.matricula = matricula;
         this.senha = senha;
     }
-
-    public Mesario(LerDadosMesarios lerDadosMesarios) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Mesario(){
+        throw new UnsupportedOperationException("Not support yet.");
+        
     }
-
-    @Override
-    public boolean validarEleitor(String nome, String tituloEleitoral) {
-        return nome.equals(getNome()) && tituloEleitoral.equals(String.valueOf(getTituloEleitor())) ;
+    public String getMatricula() {
+        return matricula;
     }
-
-    @Override
-    public boolean validarMesario(String nome, String matricula, String senha) {
-        if (nome.isEmpty() || !matricula.equals(this.matricula) || !senha.equals(this.senha)) {
-            return false;
-        }
-        try {
-            Integer.parseInt(matricula);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-        return true;
+    public String getSenha() {
+        return senha;
     }
 }

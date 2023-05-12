@@ -8,17 +8,17 @@ package interfacegrafica;
  *
  * @author Kaylane
  */
-import Objetos.Capoeira;
-import Objetos.Esportes;
-import Objetos.Futebol;
-import Objetos.Natacao;
-import Objetos.Skate;
-import Objetos.Volei;
+import objetos.Capoeira;
+import objetos.Esportes;
+import objetos.Futebol;
+import objetos.Natacao;
+import objetos.Skate;
+import objetos.Volei;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class EsportesFavoritos extends JFrame {
+public class Esportesfavoritos extends JFrame {
     
     private JCheckBox futebolCheckBox;
     private JCheckBox natacaoCheckBox;
@@ -27,7 +27,7 @@ public class EsportesFavoritos extends JFrame {
     private JCheckBox voleiCheckBox;
     private JButton votarButton;
 
-    public EsportesFavoritos() {
+    public Esportesfavoritos() {
         // Configurações da janela principal
         setTitle("Escolha seu esporte favorito");
         setSize(400, 200);

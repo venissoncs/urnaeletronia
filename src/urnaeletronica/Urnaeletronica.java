@@ -2,30 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Arquivos;
-import java.util.ArrayList;
-import Objetos.Eleitor;
-<<<<<<< HEAD
+package urnaeletronica;
 
-=======
-import Arquivos.LerDadosEleitores;
->>>>>>> 841aeee1e509115f4f9691d9664db7501dafdb3d
+import java.util.ArrayList;
+import arquivos.LerDadosMesarios;
+import arquivos.LerDadosEleitores;
+import objetos.Mesario;
+import objetos.Eleitor;
+
+
 /**
  *
- * @author Vênisson Cardoso
+ * @author Kaylane
+ * @coauthor Vênisson Cardoso
  */
-public class Urnaeletronica {
+public class UrnaEletronica {
     public static void main(String[] args) {
-<<<<<<< HEAD
-        ArrayList<Eleitor> eleitores = LerDadosEleitores.lerEleitores("./eleitores.txt");
-=======
-        ArrayList<Eleitor> eleitores = LerDadosEleitores.lerEleitores("C:\\eleitores.txt");
->>>>>>> 841aeee1e509115f4f9691d9664db7501dafdb3d
-
-        for (Eleitor eleitor : eleitores){
-            System.out.println("Nome: " + eleitor.getNome() + ", Título: " + eleitor.getTituloEleitor());
+        ArrayList<Mesario> mesarios = LerDadosMesarios.lerMesarios("C:\\mesario.txt");
+        for (Mesario mesario : mesarios) {
+            System.out.println("Nome: "+ mesario.getNome()+", Titulo: "+mesario.getTituloEleitor()+", Matricula: "+mesario.getMatricula()+", Senha: "+mesario.getSenha());
         }
-
     }
-
 }

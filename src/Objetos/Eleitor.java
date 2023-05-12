@@ -1,48 +1,30 @@
-package Objetos;
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package objetos;
 
 /**
- * 
  *
  * @author Kaylane
- 
-public class Eleitor {
-    
-    private String nome;
-    private int tituloEleitor;
-
-    public Eleitor(String nome, int tituloEleitor) {
-        this.nome = nome;
-        this.tituloEleitor = tituloEleitor;
-    }
-
-    public Eleitor() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public int getTituloEleitor() {
-        return tituloEleitor;
-    }
-}*/
-
+ * @coauthor Vênisson Cardoso
+ */
 public class Eleitor {
     private String nome;
     private String tituloEleitor;
-
+    
     public Eleitor(String nome, String tituloEleitor) {
         this.nome = nome;
         this.tituloEleitor = tituloEleitor;
     }
     public Eleitor() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        throw new UnsupportedOperationException("Not support yet.");
     }
+    
     public String getNome() {
         return nome;
     }
+    
     public String getTituloEleitor() {
         return tituloEleitor;
     }

@@ -8,9 +8,9 @@ package interfacegrafica;
  *
  * @author Kaylane
  */
-import arquivos.LerDadosMesarios;
-import objetos.Eleitor;
-import objetos.Mesario;
+import Arquivos.LeituraArquivo;
+import Objetos.Eleitor;
+import Objetos.Mesario;
 import interfaces.ValidarEleitor;
 import interfaces.ValidarMesario;
 import javax.swing.*;
@@ -35,11 +35,12 @@ public class TelaValidacao extends JFrame {
 
     private JButton btnValidar;
     private JLabel lblResultado;
+    private final ValidarEleitor ValidarEleitor;
 
     public TelaValidacao() {
         // Cria os objetos para validar o eleitor e o mesário
-        validarEleitor = (ValidarEleitor) new Eleitor();
-        validarMesario = new Mesario(new LerDadosMesarios());
+        ValidarEleitor = (ValidarEleitor) new Eleitor();
+        ValidarMesario = new Mesario(new LeituraArquivo());
 
         // Configura a janela
         setTitle("Validação de Eleitor pelo Mesário");

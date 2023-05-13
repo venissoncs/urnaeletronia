@@ -30,4 +30,8 @@ public abstract class Esportes {
     public void adicionarVoto() {
         votos++;
     }
+
+    public void add(Esportes esportes) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

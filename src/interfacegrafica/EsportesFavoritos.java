@@ -18,7 +18,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Esportesfavoritos extends JFrame {
+public class EsportesFavoritos extends JFrame {
     
     private JCheckBox futebolCheckBox;
     private JCheckBox natacaoCheckBox;
@@ -27,7 +27,7 @@ public class Esportesfavoritos extends JFrame {
     private JCheckBox voleiCheckBox;
     private JButton votarButton;
 
-    public Esportesfavoritos() {
+    public EsportesFavoritos() {
         // Configurações da janela principal
         setTitle("Escolha seu esporte favorito");
         setSize(400, 200);

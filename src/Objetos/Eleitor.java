@@ -24,7 +24,8 @@ public class Eleitor extends Individuos {
     public void setTituloEleitor(String tituloEleitor) {
         this.tituloEleitor = tituloEleitor;
     }
-
+    
+    @Override
     public String getDados() {
         return super.getDados() + " - " + tituloEleitor;
     }

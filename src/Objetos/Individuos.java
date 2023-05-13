@@ -10,4 +10,19 @@ package Objetos;
  */
 public class Individuos {
     
+    private String nome;
+    
+    public Individuos(String nome)
+    {
+        this.nome = nome;
+    }
+    
+    public String getNome()
+    {   return this.nome;   }
+    
+    public void setNome(String nome)
+    {   this.nome = nome;   }
+    
+    public String getDados()
+    {   return this.nome;   }
 }

@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-<<<<<<< HEAD:UrnaEletronica _Java11/nbproject/private/private.xml
-=======
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/venis/Desktop/urnaeletronica/UrnaEletronica%20_Java11/src/arquivos/LerDadosEleitores.java</file>
-            <file>file:/C:/Users/venis/Desktop/urnaeletronica/UrnaEletronica%20_Java11/src/objetos/Eleitor.java</file>
-            <file>file:/C:/Users/venis/Desktop/urnaeletronica/UrnaEletronica%20_Java11/src/objetos/Mesario.java</file>
-            <file>file:/C:/Users/venis/Desktop/urnaeletronica/UrnaEletronica%20_Java11/src/urnaeletronica/UrnaEletronica.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfaces/GerarResultados.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfacegrafica/PanelFinalizarUrna.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Arquivos/esportes.txt</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Skate.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfacegrafica/ResultadoPanel.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfaces/ContadorVotos.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Arquivos/mesarios.txt</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Arquivos/LeituraArquivo.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Arquivos/mesario.txt</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfaces/Login.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Arquivos/eleitores.txt</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Eleitor.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfaces/ValidarEleitor.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfacegrafica/TelaValidacao.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Natacao.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/urnaeletronica/UrnaEletronica.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Hash.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Futebol.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Capoeira.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfacegrafica/LoginPanel.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Esportes.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Volei.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfacegrafica/EsportesFavoritos.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Individuos.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/interfaces/ValidarMesario.java</file>
+            <file>file:/C:/Users/Kaylane/Desktop/urnaeletronica/src/Objetos/Mesario.java</file>
         </group>
     </open-files>
->>>>>>> 151feda0094a9550eec5e60011c68587a7d93f9e:nbproject/private/private.xml
 </project-private>

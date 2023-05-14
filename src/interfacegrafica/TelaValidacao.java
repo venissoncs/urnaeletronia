@@ -9,8 +9,8 @@ package interfacegrafica;
  * @author Kaylane
  */
 import Arquivos.LeituraArquivo;
-import Objetos.Eleitor;
-import Objetos.Mesario;
+import objetos.Eleitor;
+import objetos.Mesario;
 import interfaces.ValidarEleitor;
 import interfaces.ValidarMesario;
 import javax.swing.*;

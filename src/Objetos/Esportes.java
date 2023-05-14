@@ -14,7 +14,7 @@ public abstract class Esportes {
     private String nome;
     private int votos;
 
-    public Esportes (String nome) {
+    public Esportes (String nome, int votos) {
         this.nome = nome;
         this.votos = 0;
     }

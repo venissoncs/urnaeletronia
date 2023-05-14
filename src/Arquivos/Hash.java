@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package objetos;
+package arquivos;
 
 /**
  *
@@ -20,9 +20,9 @@ public class Hash {
 
         // Lista de arquivos a serem processados
         List<File> arquivos = new ArrayList<File>();
-        arquivos.add(new File("Eleitor.java"));
-        arquivos.add(new File("Mesario.java"));
-        arquivos.add(new File("Esportes.java"));
+        arquivos.add(new File("/eleitores.txt"));
+        arquivos.add(new File("/mesario.txt"));
+        arquivos.add(new File("arquivos/esportes.txt"));
 
         // Itera sobre a lista de arquivos e gera a hash para cada um
         for (File arquivo : arquivos) {

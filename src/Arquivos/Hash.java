@@ -22,7 +22,7 @@ public class Hash {
         List<File> arquivos = new ArrayList<File>();
         arquivos.add(new File("/eleitores.txt"));
         arquivos.add(new File("/mesario.txt"));
-        arquivos.add(new File("arquivos/esportes.txt"));
+        arquivos.add(new File("/esportes.txt"));
 
         // Itera sobre a lista de arquivos e gera a hash para cada um
         for (File arquivo : arquivos) {

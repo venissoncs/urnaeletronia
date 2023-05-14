@@ -8,9 +8,9 @@ package arquivos;
  *
  * @author Kaylane
  */
-import Objetos.Esportes;
-import Objetos.Eleitor;
-import Objetos.Mesario;
+import objetos.Esportes;
+import objetos.Eleitor;
+import objetos.Mesario;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -45,8 +45,8 @@ public class LeituraArquivo {
         while ((linha = leitor.readLine()) != null) {
             String[] campos = linha.split(";");
             String nome = campos[0];
-            String numero = campos[1];
-            Esportes esportes = new Esportes(nome, numero) {};
+            int numero = Integer.parseInt(campos[1]);
+            Esportes esportes = new Esportes(nome, numero);
             esportes.add(esportes);
         }
         leitor.close();
